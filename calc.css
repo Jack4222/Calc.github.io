@@ -1,0 +1,38 @@
+body{
+    display:flex;
+    height:100vh;
+    width:99%;
+    justify-content: center;
+    align-items: center;
+}
+#buttons{
+    
+    margin-left:40px;
+   display:grid;
+   width:600px;
+   height:700px; 
+   grid-template-columns: repeat(4,120px);
+   grid-template-rows: 150px repeat(5,120px);
+}
+.bt{
+    border: 5px solid black;
+    font-size: 30px;
+    padding-top:40px;
+    text-align: center;
+}
+#be{
+    grid-column: 3 /span 2;
+}
+#bc{
+    grid-column: 1 /span 2
+}
+#text{
+    overflow: hidden;
+    border:5px solid black;
+    grid-column: 1 /span 4;
+    font-size: 90px;
+    padding-top:20px;
+}
+.bt:hover {
+    background-color: rgb(102, 102, 102);
+}
